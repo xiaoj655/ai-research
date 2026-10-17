@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" font-family="-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Zen Hei', sans-serif">
+  <rect width="1000" height="660" fill="#0f1218"/>
+  <text x="40" y="46" fill="#e8eaed" font-size="22" font-weight="bold">22–35 岁程序员路径：三次分岔</text>
+  <text x="40" y="72" fill="#8b93a1" font-size="14">示意图，仅表示常见选项与时间位置，不代表占比、不表示独立或互斥</text>
+
+  <!-- Band 1 -->
+  <text x="40" y="126" fill="#7aa2f7" font-size="15" font-weight="bold">22–25 · 起点</text>
+  <line x1="40" y1="138" x2="960" y2="138" stroke="#242a36" stroke-width="1"/>
+  <g fill="#e8eaed" font-size="15" text-anchor="middle">
+    <rect x="60" y="152" width="200" height="52" rx="6" fill="#1b2130" stroke="#3b4761"/>
+    <text x="160" y="184">大厂校招</text>
+    <rect x="280" y="152" width="200" height="52" rx="6" fill="#1b2130" stroke="#3b4761"/>
+    <text x="380" y="184">中小厂 / 创业</text>
+    <rect x="500" y="152" width="200" height="52" rx="6" fill="#1b2130" stroke="#3b4761"/>
+    <text x="600" y="184">国企 / 研究所</text>
+    <rect x="720" y="152" width="200" height="52" rx="6" fill="#1b2130" stroke="#3b4761"/>
+    <text x="820" y="184">外包 / 外企</text>
+  </g>
+
+  <!-- arrows -->
+  <g stroke="#3b4761" stroke-width="1.5" fill="none">
+    <path d="M160 204 L160 250 L460 250 L460 296"/>
+    <path d="M380 204 L380 262 L600 262 L600 296"/>
+    <path d="M600 204 L600 274 L760 274 L760 296"/>
+    <path d="M820 204 L820 286 L300 286 L300 296"/>
+    <path d="M500 190 L520 190"/>
+  </g>
+
+  <!-- Band 2 -->
+  <text x="40" y="326" fill="#7aa2f7" font-size="15" font-weight="bold">26–30 · 第一次分岔</text>
+  <line x1="40" y1="338" x2="960" y2="338" stroke="#242a36" stroke-width="1"/>
+  <g fill="#e8eaed" font-size="15" text-anchor="middle">
+    <rect x="60" y="352" width="240" height="52" rx="6" fill="#1b2130" stroke="#7aa2f7"/>
+    <text x="180" y="384">技术做深（能被指名）</text>
+    <rect x="330" y="352" width="240" height="52" rx="6" fill="#1b2130" stroke="#7aa2f7"/>
+    <text x="450" y="384">带人 / 转管理</text>
+    <rect x="600" y="352" width="240" height="52" rx="6" fill="#1b2130" stroke="#7aa2f7"/>
+    <text x="720" y="384">换轨（产品/测试/安全）</text>
+  </g>
+
+  <!-- arrows -->
+  <g stroke="#3b4761" stroke-width="1.5" fill="none">
+    <path d="M180 404 L180 450 L200 450 L200 496"/>
+    <path d="M450 404 L450 460 L440 460 L440 496"/>
+    <path d="M720 404 L720 470 L660 470 L660 496"/>
+    <path d="M450 404 L450 478 L860 478 L860 496"/>
+    <path d="M180 404 L180 486 L320 486 L320 496"/>
+  </g>
+
+  <!-- Band 3 -->
+  <text x="40" y="526" fill="#7aa2f7" font-size="15" font-weight="bold">31–35 · 第二次分岔</text>
+  <line x1="40" y1="538" x2="960" y2="538" stroke="#242a36" stroke-width="1"/>
+  <g fill="#e8eaed" font-size="14" text-anchor="middle">
+    <rect x="60" y="552" width="168" height="52" rx="6" fill="#1b2130" stroke="#4d5b7a"/>
+    <text x="144" y="576">留在大厂</text>
+    <text x="144" y="595" font-size="12" fill="#8b93a1">博晋升</text>
+    <rect x="242" y="552" width="168" height="52" rx="6" fill="#1b2130" stroke="#4d5b7a"/>
+    <text x="326" y="576">降维中小厂</text>
+    <text x="326" y="595" font-size="12" fill="#8b93a1">做技术负责人</text>
+    <rect x="424" y="552" width="168" height="52" rx="6" fill="#1b2130" stroke="#4d5b7a"/>
+    <text x="508" y="576">国企 / 研究所</text>
+    <text x="508" y="595" font-size="12" fill="#8b93a1">稳定换空间</text>
+    <rect x="606" y="552" width="168" height="52" rx="6" fill="#1b2130" stroke="#4d5b7a"/>
+    <text x="690" y="576">出海 / 远程</text>
+    <text x="690" y="595" font-size="12" fill="#8b93a1">重新定价</text>
+    <rect x="788" y="552" width="168" height="52" rx="6" fill="#1b2130" stroke="#4d5b7a"/>
+    <text x="872" y="576">离开技术岗</text>
+    <text x="872" y="595" font-size="12" fill="#8b93a1">转行 / 自雇</text>
+  </g>
+
+  <text x="40" y="640" fill="#5c6675" font-size="12">真正开始分层的位置大多在 30 岁前后，只是到 35 岁才被看见。</text>
+</svg>
