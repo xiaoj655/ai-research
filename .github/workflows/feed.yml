@@ -1,0 +1,62 @@
+name: Build research feeds
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'reports/**'
+      - 'scripts/**'
+      - 'requirements.txt'
+      - '.github/workflows/feed.yml'
+  pull_request:
+    paths:
+      - 'reports/**'
+      - 'scripts/**'
+      - 'requirements.txt'
+      - '.github/workflows/feed.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: research-feed-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s scripts -p 'test_*.py'
+      - run: python scripts/build_feed.py
+
+  publish:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python scripts/build_feed.py
+      - name: Commit updated feeds
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add feed.xml atom.xml
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update full-text research feeds'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
