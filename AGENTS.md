@@ -9,6 +9,6 @@
 - 正文写完整报告，注明来源链接和不确定性，不要只写摘要或外部文档链接。默认语言跟随用户要求。
 - 草稿设置 `draft: true`；草稿文件依然公开，不得提交秘密或私人信息。
 - 图片放在 `reports/assets/` 或报告旁的资源目录，使用相对路径；不要提交本地绝对路径。
-- `feed.xml` 和 `atom.xml` 是自动生成文件，禁止手动维护。推送 `main` 后由 GitHub Actions 更新。
-- 发布前运行 `python -m unittest discover -s scripts -p 'test_*.py'` 和 `python scripts/build_feed.py`。若环境缺少依赖，先安装 `requirements.txt`。
+- 发布报告时，只提交报告 Markdown 和所需图片；`feed.xml` 和 `atom.xml` 统一由推送 `main` 后的 GitHub Actions 自动生成并提交。不要手动编辑、在本地生成或提交这两个文件。
+- 发布前运行 `python -m unittest discover -s scripts -p 'test_*.py'`。若环境缺少依赖，先安装 `requirements.txt`。只有排查或修改订阅源生成器时，才按需在本地运行 `python scripts/build_feed.py`；检查产生的 XML 变更不要纳入提交。
 - 保持报告的文件路径、标题和发布日期稳定；修订使用 `updated`。KOReader 可能需要删除旧 EPUB 再同步才能获取修订。
