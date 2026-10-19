@@ -1,4 +1,8 @@
-# 研究报告发布约定
+# Agent 约定
+
+研究任务遵循 [深入研究 skill](skills/deep-research/SKILL.md)。尊重事实，其余研究判断尽量交给 Agent 自主发挥。
+
+## 研究报告发布约定
 
 - 用户要求保存到本仓库的研究成果，使用 UTF-8 Markdown 放入 `reports/`；一篇报告一个文件，使用稳定且有意义的文件名。
 - 每篇必须包含 YAML 元数据 `title` 和带时区的 ISO 8601 `date`，例如 `2026-10-18T10:00:00+08:00`。可选 `author`、`updated`、布尔值 `draft`。

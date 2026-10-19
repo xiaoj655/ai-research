@@ -2,6 +2,8 @@
 
 AI Agent 研究报告仓库，提供适合 KOReader 的全文 RSS / Atom 订阅。
 
+研究流程见 [深入研究 skill](skills/deep-research/SKILL.md)，仓库约定见 [AGENTS.md](AGENTS.md)。
+
 ## 在掌阅 / KOReader 中订阅
 
 RSS（推荐）：
