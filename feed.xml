@@ -8,8 +8,8 @@
     <atom:link href="https://raw.githubusercontent.com/xiaoj655/ai-research/main/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>从源码到线上服务：读懂 CNB、Buildpack、Docker、Heroku 与蓝鲸 PaaS</title>
-      <link>https://github.com/xiaoj655/ai-research/blob/main/reports/source-to-production-cnb-buildpacks-docker-heroku-blueking.md</link>
-      <guid isPermaLink="true">https://github.com/xiaoj655/ai-research/blob/main/reports/source-to-production-cnb-buildpacks-docker-heroku-blueking.md</guid>
+      <link>https://github.com/xiaoj655/ai-research/blob/main/reports/2026-10-30-cnb-buildpacks-blueking.md</link>
+      <guid isPermaLink="true">https://github.com/xiaoj655/ai-research/blob/main/reports/2026-10-30-cnb-buildpacks-blueking.md</guid>
       <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
       <description>&lt;h1&gt;从源码到线上服务：读懂 CNB、Buildpack、Docker、Heroku 与蓝鲸 PaaS&lt;/h1&gt;
 &lt;p&gt;你会使用 Kubernetes、会看 Pod，也知道 Python 依赖如何安装，却仍然觉得这些名词没有连起来，这很正常：它们横跨构建、打包、交付、运行四个阶段，而且相同单词在不同项目里还有不同含义。&lt;/p&gt;
